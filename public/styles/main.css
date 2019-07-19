@@ -101,6 +101,11 @@ body {
       font-size: 18px;
       width: 100%;
       margin-bottom: 5px; }
+      #ingredients .ingredients-container .ingredient label {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%; }
       #ingredients .ingredients-container .ingredient p {
         margin-left: 5px; }
       #ingredients .ingredients-container .ingredient span {
@@ -108,29 +113,29 @@ body {
         #ingredients .ingredients-container .ingredient span:hover {
           text-decoration: underline;
           cursor: pointer; }
-  #ingredients .ingredient-input {
+  #ingredients .ingredient-form {
     width: 100%;
     align-self: flex-start;
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 10px 0px; }
-    #ingredients .ingredient-input input,
-    #ingredients .ingredient-input #add-ingredient-btn {
+    #ingredients .ingredient-form input,
+    #ingredients .ingredient-form #add-ingredient-btn {
       border-radius: 3px;
       height: 30px;
       padding: 5px; }
-    #ingredients .ingredient-input input {
+    #ingredients .ingredient-form input {
       border: 1px solid black;
       font-size: 16px;
       margin-right: 5px; }
-    #ingredients .ingredient-input #add-ingredient-btn {
+    #ingredients .ingredient-form #add-ingredient-btn {
       font-size: 15px;
       border: none;
       color: #fff;
       background-color: #5bc0de;
       padding: 0px 20px; }
-      #ingredients .ingredient-input #add-ingredient-btn:hover {
+      #ingredients .ingredient-form #add-ingredient-btn:hover {
         cursor: pointer;
         background-color: #28a1c5; }
 

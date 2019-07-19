@@ -123,6 +123,12 @@ body {
       width: 100%;
       margin-bottom: 5px;
 
+      label {
+        @include flex;
+        align-items: center;
+        width: 100%;
+      }
+
       p {
         margin-left: 5px;
       }
@@ -138,7 +144,7 @@ body {
     }
   }
 
-  .ingredient-input {
+  .ingredient-form {
     width: 100%;
     align-self: flex-start;
     @include flex;
