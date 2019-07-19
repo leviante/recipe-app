@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Required Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Recipe App: Edit Recipe</title>
+  </head>
+  <body>
+    <main id="recipe-container">
+      <section id="recipe-info">
+        <input
+          class="recipe-title"
+          type="text"
+          placeholder="Enter recipe name..."
+        />
+        <textarea
+          class="recipe-body"
+          placeholder="Please describe your recipe..."
+        ></textarea>
+      </section>
+      <section id="ingredients">
+        <h1>Ingredients</h1>
+        <div class="ingredients-container">
+          <!-- <label class="ingredient">
+            <input type="checkbox" />
+            <p>Rice</p>
+            <span>remove</span>
+          </label>
+          <label class="ingredient">
+            <input type="checkbox" />
+            <p>Olive oil</p>
+            <span>remove</span>
+          </label>
+          <label class="ingredient">
+            <input type="checkbox" />
+            <p>Diced tomatoes</p>
+            <span>remove</span>
+          </label>
+          <label class="ingredient">
+            <input type="checkbox" />
+            <p>Shrimp</p>
+            <span>remove</span>
+          </label> -->
+        </div>
+
+        <div class="ingredient-input">
+          <input type="text" placeholder="Add ingredient..." />
+          <button id="add-ingredient-btn">Add</button>
+        </div>
+      </section>
+      <section id="danger-zone">
+        <h1>Danger Zone</h1>
+        <button id="delete-recipe-btn">Delete recipe</button>
+      </section>
+    </main>
+  </body>
+</html>
