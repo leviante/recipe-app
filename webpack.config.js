@@ -1,7 +1,10 @@
 const path = require("path"); //a node feature that allows us to load libraries that node provides. This path library provides us functions that we can work with paths universally.
 
 module.exports = {
-  entry: ["babel-polyfill", "./src/index.js"], //relative path to the place where our code lives (inside src directory, index.js)
+  entry: {
+    index: ["babel-polyfill", "./src/index.js"],
+    edit: ["babel-polyfill", "./src/edit.js"]
+  }, //relative path to the place where our code lives (inside src directory, index.js)
   output: {
     path: path.resolve(__dirname, "public/scripts"), //where we want to save webpack output (public/scripts)
     //The catch: What goes inside path value, NEEDS TO BE AN ABSOLUTE PATH UNLIKE ENTRY, which can be relative
@@ -17,7 +20,7 @@ module.exports = {
     // check path variable above
 
     //to change the output file name
-    filename: "bundle.js" //property has to be filename
+    filename: "[name]-bundle.js" //property has to be filename
   },
   //Webpack allows us this module property, to customize the modules system, expects an object
   module: {

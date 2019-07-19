@@ -43,8 +43,11 @@ body {
   }
 
   .recipe {
+    display: block;
     border: 1px solid black;
     border-radius: 5px;
+    text-decoration: none;
+    color: #000;
     padding: 10px;
     margin-bottom: 10px;
 
@@ -159,25 +162,20 @@ body {
       font-size: 15px;
       border: none;
       color: #fff;
-      background-color: #5cb85c;
+      background-color: #5bc0de;
       padding: 0px 20px;
 
       &:hover {
         cursor: pointer;
-        background-color: darken(#5cb85c, 15);
+        background-color: darken(#5bc0de, 15);
       }
     }
   }
 }
 
-#danger-zone {
+#zones {
   width: 100%;
-  @include flex-col;
-
-  h1,
-  #delete-recipe-btn {
-    align-self: flex-start;
-  }
+  @include flex;
 
   h1 {
     font-size: 30px;
@@ -185,11 +183,14 @@ body {
     margin-bottom: 10px;
   }
 
-  #delete-recipe-btn {
+  #delete-recipe-btn,
+  #return-home-btn {
     background-color: #d9534f;
+    border: none;
     border-radius: 3px;
     color: #fff;
     font-size: 15px;
+    outline: none;
     width: 180px;
     height: 30px;
     padding: 5px;
@@ -197,6 +198,18 @@ body {
     &:hover {
       cursor: pointer;
       background-color: darken(#d9534f, 15);
+    }
+  }
+
+  .non-danger-zone {
+    margin-left: auto;
+
+    #return-home-btn {
+      background-color: #5cb85c;
+
+      &:hover {
+        background-color: darken(#5cb85c, 15);
+      }
     }
   }
 }

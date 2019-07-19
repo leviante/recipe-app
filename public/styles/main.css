@@ -32,8 +32,11 @@ body {
       font-size: 13px;
       color: #838383; }
   #container .recipe {
+    display: block;
     border: 1px solid black;
     border-radius: 5px;
+    text-decoration: none;
+    color: #000;
     padding: 10px;
     margin-bottom: 10px; }
     #container .recipe h3 {
@@ -125,31 +128,38 @@ body {
       font-size: 15px;
       border: none;
       color: #fff;
-      background-color: #5cb85c;
+      background-color: #5bc0de;
       padding: 0px 20px; }
       #ingredients .ingredient-input #add-ingredient-btn:hover {
         cursor: pointer;
-        background-color: #3d8b3d; }
+        background-color: #28a1c5; }
 
-#danger-zone {
+#zones {
   width: 100%;
   display: flex;
-  flex-direction: column; }
-  #danger-zone h1,
-  #danger-zone #delete-recipe-btn {
-    align-self: flex-start; }
-  #danger-zone h1 {
+  flex-direction: row; }
+  #zones h1 {
     font-size: 30px;
     width: 100%;
     margin-bottom: 10px; }
-  #danger-zone #delete-recipe-btn {
+  #zones #delete-recipe-btn,
+  #zones #return-home-btn {
     background-color: #d9534f;
+    border: none;
     border-radius: 3px;
     color: #fff;
     font-size: 15px;
+    outline: none;
     width: 180px;
     height: 30px;
     padding: 5px; }
-    #danger-zone #delete-recipe-btn:hover {
+    #zones #delete-recipe-btn:hover,
+    #zones #return-home-btn:hover {
       cursor: pointer;
       background-color: #b52b27; }
+  #zones .non-danger-zone {
+    margin-left: auto; }
+    #zones .non-danger-zone #return-home-btn {
+      background-color: #5cb85c; }
+      #zones .non-danger-zone #return-home-btn:hover {
+        background-color: #3d8b3d; }
