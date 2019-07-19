@@ -84,7 +84,7 @@ const noRecipeMessage = () => {
       "Currently there's no recipe here. Click 'Add Recipe' to add a new recipe.";
 
     const parentNode = document.querySelector("#container");
-    const referenceNode = document.querySelector(".add-recipe-btn");
+    const referenceNode = document.querySelector(".buttons");
 
     parentNode.insertBefore(message, referenceNode);
   }

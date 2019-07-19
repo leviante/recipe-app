@@ -56,15 +56,34 @@ body {
     }
   }
 
-  .add-recipe-btn {
-    font-family: $main-font;
-    font-size: 16px;
-    color: #000;
-    background-color: lighten(#a9a9a9, 20);
-    border: 1px solid black;
-    border-radius: 3px;
-    padding: 5px 15px;
-    margin-top: 20px;
+  .buttons {
+    @include flex;
+    width: 100%;
+
+    .add-recipe-btn,
+    .reset-btn {
+      font-family: $main-font;
+      font-size: 16px;
+      color: #fff;
+      background-color: #5bc0de;
+      border: 1px solid black;
+      border-radius: 3px;
+      padding: 5px 15px;
+      margin-top: 20px;
+
+      &:hover {
+        background-color: darken(#5bc0de, 20);
+      }
+    }
+
+    .reset-btn {
+      background-color: #d9534f;
+      margin-left: auto;
+
+      &:hover {
+        background-color: darken(#d9534f, 20);
+      }
+    }
   }
 }
 

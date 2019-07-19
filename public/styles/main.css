@@ -41,15 +41,28 @@ body {
     margin-bottom: 10px; }
     #container .recipe h3 {
       margin-bottom: 10px; }
-  #container .add-recipe-btn {
-    font-family: "Nunito", sans-serif;
-    font-size: 16px;
-    color: #000;
-    background-color: gainsboro;
-    border: 1px solid black;
-    border-radius: 3px;
-    padding: 5px 15px;
-    margin-top: 20px; }
+  #container .buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%; }
+    #container .buttons .add-recipe-btn,
+    #container .buttons .reset-btn {
+      font-family: "Nunito", sans-serif;
+      font-size: 16px;
+      color: #fff;
+      background-color: #5bc0de;
+      border: 1px solid black;
+      border-radius: 3px;
+      padding: 5px 15px;
+      margin-top: 20px; }
+      #container .buttons .add-recipe-btn:hover,
+      #container .buttons .reset-btn:hover {
+        background-color: #2390b0; }
+    #container .buttons .reset-btn {
+      background-color: #d9534f;
+      margin-left: auto; }
+      #container .buttons .reset-btn:hover {
+        background-color: #a02622; }
 
 #recipe-container {
   width: 50%;

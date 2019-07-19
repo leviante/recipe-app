@@ -48,7 +48,7 @@ const deleteRecipe = id => {
   }
 };
 
-const getRecipes = () => recipes;
+const getRecipes = () => (recipes = loadRecipe());
 
 recipes = loadRecipe();
 

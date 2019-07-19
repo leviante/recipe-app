@@ -18,3 +18,10 @@ document.querySelector("#search-recipe").addEventListener("input", e => {
   });
   renderRecipes();
 });
+
+//Listen reset button, delete all when user clicks it
+document.querySelector(".reset-btn").addEventListener("click", () => {
+  localStorage.clear();
+  noRecipeMessage();
+  renderRecipes();
+});
